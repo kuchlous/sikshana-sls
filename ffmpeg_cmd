@@ -1,0 +1,1 @@
+ffmpeg -i sikshana-1.mp4 -f concat -i ffmp.in -strict -2 -vsync vfr -pix_fmt yuv420p -vf fps=24 -video_track_timescale 90000 -max_muxing_queue_size 2048 -tune animation -crf 6 sikshana-1-movie.mp4
