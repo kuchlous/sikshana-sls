@@ -1,0 +1,20 @@
+Input: Text
+Output: 3 files
+  - Video at normal speed
+  - Video at 0.75 speed
+  - Video by word-by-word
+Flow:
+  - Send request to for version 1 and 2 to amazon
+    - marks file
+    - audio file
+  - Send request to for version 3 to amazon
+    - marks file
+    - audio file
+  - create images from text
+  - generate input of ffmeg for version 1
+  - generate video of version 1
+  - run sox to generate slower audio
+  - generate input of ffmeg for version 2
+  - generate video of version 2
+  - generate input of ffmeg for version 3
+  - generate video of version 3
